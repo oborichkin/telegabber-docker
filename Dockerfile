@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-MAINTAINER justinas@eofnet.lt
+LABEL maintainer="justinas@eofnet.lt"
 WORKDIR /root/
 
 
@@ -33,7 +33,7 @@ COPY files/settings.cfg.lua /etc/prosody/conf.d/settings.cfg.lua
 # copy nginx config
 COPY files/nginx_host.conf /etc/nginx/sites-enabled/nginx_host.conf
 
-VOLUME ["/var/lib/prosody","/sessions"]
+VOLUME ["/var/lib/prosody", "/sessions"]
 
 # Configure Services and Port
 ENTRYPOINT ["/init.sh"]

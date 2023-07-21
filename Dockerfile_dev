@@ -1,6 +1,6 @@
 # for develoment and testing purposes only
 FROM ubuntu:20.04
-MAINTAINER justinas@eofnet.lt
+LABEL maintainer="justinas@eofnet.lt"
 WORKDIR /root/
 
 
